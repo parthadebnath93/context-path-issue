@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
-	@GetMapping("/test")
-	public void testAPI() {
-		System.out.println("Called Controller::::");
-	}
+    @GetMapping("/test")
+    public String testAPI() {
+        return "Called Controller::::";
+    }
 }
